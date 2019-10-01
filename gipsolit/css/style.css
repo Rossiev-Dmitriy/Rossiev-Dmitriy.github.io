@@ -378,12 +378,18 @@ section {
 /*Схема работы*/
 .scheme {
   background: #ffffff url(../img/scheme/scheme-bg.png) bottom -10rem right -20rem no-repeat;
-  background-size: 65rem;
+  background-size: 95rem;
   font-size: 1.5rem;
 }
+.scheme-block {
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+}
 .scheme h3 {
+  margin-top: 2rem;
   font-size: 2rem;
   font-family: 'ProximaNova_bold', sans-serif;
+  margin-bottom: 2rem;
 }
 /*Все на 100% включено*/
 .section-header_active h2 {
@@ -953,6 +959,11 @@ footer .footer-dev-logo {
   margin-top: 1rem;
 }
 /*Медиа запросы адаптации сайта*/
+@media (max-width: 1421px) {
+  .scheme {
+    background-size: 75rem;
+  }
+}
 @media (max-width: 1200px) {
   .price-list {
     min-height: 16rem;
@@ -968,6 +979,9 @@ footer .footer-dev-logo {
   }
   .feedback .fotorama {
     margin-bottom: 3rem;
+  }
+  .scheme {
+    background-size: 65rem;
   }
   .all-inclusive .media {
     min-height: 11rem;
