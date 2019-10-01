@@ -417,10 +417,16 @@ section {
 /*Схема работы*/
 .scheme {
 	background: #fff url(../img/scheme/scheme-bg.png) bottom -10rem right -20rem no-repeat;
-	background-size: 65rem;
+	background-size: 95rem;
+	&-block {
+		margin-bottom: 2rem;
+		font-size: 1.7rem;
+	}
 	h3 {
+		margin-top: 2rem;
 		font-size: 2rem;
 		.bold();
+		margin-bottom: 2rem;
 	}
 	font-size: 1.5rem;
 }
@@ -1005,6 +1011,11 @@ footer {
 }
 
 /*Медиа запросы адаптации сайта*/
+@media (max-width: 1421px) {
+	.scheme {
+		background-size: 75rem;
+	}
+}
 @media (max-width: 1200px) {
 	.price {
 		&-list {
@@ -1024,6 +1035,9 @@ footer {
 		.fotorama {
 			margin-bottom: 3rem;
 		}
+	}
+	.scheme {
+		background-size: 65rem;
 	}
 	.all-inclusive {
 		.media {
