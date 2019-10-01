@@ -6,3 +6,7 @@
 
 [Пушистый сайт](https://rossiev-dmitriy.github.io/Fox_Coon/ "Пушистый сайт") - Работа с репозиторием github
 
+
+[Гипсолит штукатурка стен](https://rossiev-dmitriy.github.io/gipsolit/ "Гипсолит штукатурка стен") - Вёрстка из PSD макета
+
+
