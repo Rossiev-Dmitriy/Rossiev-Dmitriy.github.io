@@ -1,0 +1,549 @@
+/* Fonts */
+@font-face {
+  font-family: 'SegoeUIBold';
+  src: url('../fonts/SegoeUIBold/SegoeUIBold.eot');
+  src: url('../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix') format('embedded-opentype'), url('../fonts/SegoeUIBold/SegoeUIBold.woff2') format('woff2'), url('../fonts/SegoeUIBold/SegoeUIBold.woff') format('woff'), url('../fonts/SegoeUIBold/SegoeUIBold.ttf') format('truetype'), url('../fonts/SegoeUIBold/SegoeUIBold.svg#SegoeUIBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SegoeUILight';
+  src: url('../fonts/SegoeUILight/SegoeUILight.eot');
+  src: url('../fonts/SegoeUILight/SegoeUILight.eot?#iefix') format('embedded-opentype'), url('../fonts/SegoeUILight/SegoeUILight.woff2') format('woff2'), url('../fonts/SegoeUILight/SegoeUILight.woff') format('woff'), url('../fonts/SegoeUILight/SegoeUILight.ttf') format('truetype'), url('../fonts/SegoeUILight/SegoeUILight.svg#SegoeUILight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SegoeUIRegular';
+  src: url('../fonts/SegoeUIRegular/SegoeUIRegular.eot');
+  src: url('../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/SegoeUIRegular/SegoeUIRegular.woff2') format('woff2'), url('../fonts/SegoeUIRegular/SegoeUIRegular.woff') format('woff'), url('../fonts/SegoeUIRegular/SegoeUIRegular.ttf') format('truetype'), url('../fonts/SegoeUIRegular/SegoeUIRegular.svg#SegoeUIRegular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SegoeUISemiBold';
+  src: url('../fonts/SegoeUISemiBold/SegoeUISemiBold.eot');
+  src: url('../fonts/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/SegoeUISemiBold/SegoeUISemiBold.woff2') format('woff2'), url('../fonts/SegoeUISemiBold/SegoeUISemiBold.woff') format('woff'), url('../fonts/SegoeUISemiBold/SegoeUISemiBold.ttf') format('truetype'), url('../fonts/SegoeUISemiBold/SegoeUISemiBold.svg#SegoeUISemiBold') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+/*Colors*/
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+/*typography*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+a:active,
+a:hover {
+  color: #4bcaff;
+  border: 2px solid #4bcaff;
+  text-decoration: none;
+}
+.activea {
+  color: #4bcaff;
+  border: 2px solid #4bcaff;
+}
+.section-header {
+  margin-top: 8rem;
+  font-family: 'SegoeUILight', sans-serif;
+  font-size: 30px;
+}
+.header-line:after {
+  content: '';
+  margin-top: 0.2rem;
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  background-color: #ffffff;
+}
+.header-line-dark:after {
+  content: '';
+  margin-top: 0.2rem;
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  background-color: #69747b;
+}
+/*Header*/
+.header {
+  min-height: 15rem;
+  width: 100%;
+  background-color: #515f67;
+  position: fixed;
+  top: 0;
+  opacity: 0.7;
+  z-index: 9;
+}
+.header-header {
+  margin-top: 6.5rem;
+  font-family: 'SegoeUIBold', sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+}
+.header-blue {
+  color: #4bcaff;
+}
+.header-nav {
+  display: block;
+  margin-top: 6rem;
+  text-align: right;
+  padding: 1rem;
+  font-family: 'SegoeUIBold', sans-serif;
+  font-size: 14px;
+}
+.header-nav a {
+  padding: 1rem 1.5rem;
+}
+.header-link {
+  margin-left: 1.5rem;
+}
+.header-vertical-button {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 6.5rem;
+  text-align: right;
+  height: 3rem;
+  width: 3rem;
+  opacity: 0.7;
+}
+.header-vertical-button img {
+  height: 100%;
+  width: 100%;
+}
+.header-vertical-button:hover {
+  opacity: 0.9;
+}
+.header-vertical-nav {
+  display: none;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 22px;
+}
+.header-vertical-nav-link {
+  display: block;
+  width: 100%;
+  height: 4rem;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 1px;
+}
+.header-vertical .menuclose {
+  display: none;
+}
+.home {
+  height: 80rem;
+}
+.home-content {
+  height: 80rem;
+  margin-top: 40rem;
+  text-align: center;
+}
+.home-devise {
+  display: inline;
+  text-transform: uppercase;
+  font-size: 42px;
+  font-family: 'SegoeUILight', sans-serif;
+  color: #ffffff;
+  background: #3d474f;
+}
+.services {
+  min-height: 40.5rem;
+  background-color: #4bcaff;
+  color: #ffffff;
+}
+.services-header {
+  margin-bottom: 4rem;
+}
+.services-icons {
+  width: 5rem;
+  height: 5rem;
+}
+.services-box h3 {
+  margin-top: 2rem;
+  font-family: 'SegoeUISemiBold', sans-serif;
+  font-size: 24px;
+}
+.services-box p {
+  margin-top: 2rem;
+  font-family: 'SegoeUISemiBold', sans-serif;
+  font-size: 12px;
+}
+.portfolio {
+  min-height: 84.4rem;
+  background-color: #ffffff;
+}
+.portfolio-header {
+  margin-bottom: 6.5rem;
+}
+.portfolio-header h2 {
+  color: #69747b;
+}
+.portfolio-nav {
+  text-align: right;
+  margin-top: -1.5rem;
+}
+.portfolio-link {
+  margin-left: 1rem;
+  padding: 1rem 1.5rem;
+  color: #69747b;
+  font-family: 'SegoeUIBold', sans-serif;
+  font-size: 14px;
+}
+.portfolio-box {
+  height: 27rem;
+  width: 27rem;
+  margin-top: 2rem;
+}
+.portfolio-box:after {
+  position: absolute;
+  content: '+';
+  top: 0;
+  left: 0;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  width: 27rem;
+  height: 27rem;
+  font-size: 72px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #454e56;
+  line-height: 1;
+  opacity: 0;
+  z-index: 9;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio-box:hover:after {
+  opacity: 0.7;
+  line-height: 3.75;
+}
+.portfolio-box img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.portfolio .admb:last-child {
+  margin-bottom: 4rem;
+}
+.justdef {
+  min-height: 47.5rem;
+  background-color: #515f67;
+}
+.justdef-box {
+  margin-top: 8rem;
+  color: #ffffff;
+}
+.justdef-box p {
+  font-family: 'SegoeUIRegular', sans-serif;
+  font-size: 14px;
+  margin-bottom: 3rem;
+}
+.justdef-box iframe {
+  width: 100%;
+  height: 31rem;
+  border: none;
+}
+.justdef-header {
+  margin-bottom: 4rem;
+}
+.justdef-link {
+  font-family: 'SegoeUIBold', sans-serif;
+  font-size: 14px;
+  color: #353f46;
+  border: 2px solid #353f46;
+  padding: 1rem 2rem;
+}
+.twitter {
+  min-height: 30rem;
+  background-color: #4bcaff;
+  color: #ffffff;
+}
+.twitter-ico {
+  margin-top: 8rem;
+  text-align: right;
+  width: 1rem;
+  height: 1rem;
+}
+.twitter p {
+  margin-top: 2rem;
+  font-size: 28px;
+  font-family: 'SegoeUILight', sans-serif;
+}
+.twitter-cheese {
+  font-family: 'SegoeUISemiBold', sans-serif;
+}
+.whois {
+  min-height: 50.7rem;
+  background: #515f67 url(../img/bg-camera1.jpg) center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+.whois-box {
+  margin-top: 5rem;
+  font-size: 14px;
+  font-family: 'SegoeUIRegular', sans-serif;
+}
+.whois-box p {
+  margin-bottom: 4rem;
+}
+.whois-icon {
+  display: inline-block;
+  padding: 1.5rem;
+  border: 2px solid #ffffff;
+}
+.whois-icon img {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.testimonials {
+  min-height: 36rem;
+  color: #69747b;
+}
+.testimonials-kav {
+  margin-top: 8rem;
+}
+.testimonials-kav img {
+  width: 3rem;
+}
+.testimonials-box {
+  margin-top: 4rem;
+  font-family: 'SegoeUILight', sans-serif;
+  font-size: 24px;
+}
+.testimonials-quote {
+  margin-top: 4rem;
+  color: #4bcaff;
+  font-family: 'SegoeUIBold', sans-serif;
+  font-size: 14px;
+}
+.contacts {
+  min-height: 81rem;
+  background: #69747b url(../img/bg-holder.jpg) center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+.contacts label {
+  margin-top: 3rem;
+  text-transform: uppercase;
+  font-family: 'SegoeUIBold', sans-serif;
+  font-size: 14px;
+}
+.contacts-box p {
+  margin-top: 4.8rem;
+  font-size: 14px;
+}
+.contacts input {
+  height: 6rem;
+}
+.contacts input,
+.contacts textarea {
+  border-radius: 0;
+  border: 1px solid #ffffff;
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  font-family: 'SegoeUIRegular', sans-serif;
+  font-size: 18px;
+}
+.contacts input:hover,
+.contacts textarea:hover,
+.contacts input:focus,
+.contacts textarea:focus {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #4bcaff;
+}
+.contacts .btn {
+  margin-top: 4rem;
+  height: 5rem;
+  background-color: #4bcaff;
+  color: #ffffff;
+  border-radius: 0;
+  border: none;
+  text-transform: uppercase;
+  font-family: 'SegoeUIBold', sans-serif;
+  font-size: 14px;
+}
+.footer {
+  height: 17rem;
+  background-color: #353f46;
+  color: #69747b;
+  font-family: 'SegoeUISemiBold', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.footer-nav {
+  margin-top: 8rem;
+}
+.footer-nav ul {
+  padding: 0;
+}
+.footer-nav li {
+  display: inline-block;
+  margin-right: 2rem;
+  padding-left: 2rem;
+  list-style-type: none;
+  border-left: 1px solid #69747b;
+}
+.footer-nav li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+  border: none;
+}
+.footer-link {
+  color: #69747b;
+}
+.footer-year {
+  margin-top: 8rem;
+  text-align: right;
+}
+.activep {
+  color: #4bcaff;
+  border: 2px solid #4bcaff;
+}
+@media (max-width: 1199px) {
+  .header-link {
+    margin-left: 0.5rem;
+  }
+  .portfolio-nav a {
+    margin-left: 0.5rem;
+    padding: 1rem 0.5rem;
+  }
+  .portfolio-box {
+    height: 23rem;
+    width: 23rem;
+  }
+  .home-devise {
+    font-size: 32px;
+  }
+}
+@media (max-width: 992px) {
+  .header-vertical {
+    display: none;
+  }
+  .header-vertical-nav {
+    display: none;
+  }
+  .home-devise {
+    font-size: 28px;
+  }
+  .footer {
+    height: 10rem;
+  }
+  .footer-nav {
+    margin-top: 4rem;
+  }
+  .footer-year {
+    margin-top: 4rem;
+  }
+  .services-box {
+    margin-bottom: 4rem;
+  }
+  .portfolio-nav a {
+    margin-left: 0.5rem;
+    padding: 1rem 0.5rem;
+  }
+  .portfolio-box {
+    height: 27rem;
+    width: 27rem;
+    margin-top: 2rem;
+  }
+  .portfolio .admb {
+    margin-bottom: 4rem;
+  }
+  .justdef-box {
+    margin-bottom: 4rem;
+  }
+  .whois-box {
+    margin-top: 0;
+  }
+  .whois-box p {
+    margin-top: 0rem;
+    margin-bottom: 4rem;
+  }
+  .whois-header {
+    margin-bottom: 4rem;
+  }
+  .whois-icons {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  .contacts .btn {
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    min-height: 15rem;
+  }
+  .header-header {
+    margin-top: 6.5rem;
+  }
+  .header-nav {
+    display: none;
+    margin-top: 6.5rem;
+    text-align: center;
+    padding: 0;
+  }
+  .header-nav a {
+    padding: 1rem 0.5rem;
+  }
+  .header-link {
+    margin-left: 0.5rem;
+  }
+  .header-vertical {
+    display: inline-block;
+  }
+  .header-vertical-button {
+    display: inline-block;
+  }
+  .header-vertical-button:hover {
+    opacity: 0.9;
+  }
+  .header-vertical-nav {
+    display: none;
+    text-align: center;
+    font-size: 22px;
+  }
+  .header-vertical-nav-link {
+    display: block;
+    width: 100%;
+    height: 4rem;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 1px;
+  }
+  .home-devise {
+    font-size: 22px;
+  }
+  .portfolio-box {
+    height: 40rem;
+    width: 40rem;
+  }
+  .testimonials-quote {
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .header-nav {
+    margin-top: 1rem;
+  }
+  .home-devise {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,631 @@
+/* Fonts */
+@font-face {
+    font-family: 'SegoeUIBold';
+    src: url('../fonts/SegoeUIBold/SegoeUIBold.eot');
+    src: url('../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SegoeUIBold/SegoeUIBold.woff2') format('woff2'),
+        url('../fonts/SegoeUIBold/SegoeUIBold.woff') format('woff'),
+        url('../fonts/SegoeUIBold/SegoeUIBold.ttf') format('truetype'),
+        url('../fonts/SegoeUIBold/SegoeUIBold.svg#SegoeUIBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SegoeUILight';
+    src: url('../fonts/SegoeUILight/SegoeUILight.eot');
+    src: url('../fonts/SegoeUILight/SegoeUILight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SegoeUILight/SegoeUILight.woff2') format('woff2'),
+        url('../fonts/SegoeUILight/SegoeUILight.woff') format('woff'),
+        url('../fonts/SegoeUILight/SegoeUILight.ttf') format('truetype'),
+        url('../fonts/SegoeUILight/SegoeUILight.svg#SegoeUILight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SegoeUIRegular';
+    src: url('../fonts/SegoeUIRegular/SegoeUIRegular.eot');
+    src: url('../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SegoeUIRegular/SegoeUIRegular.woff2') format('woff2'),
+        url('../fonts/SegoeUIRegular/SegoeUIRegular.woff') format('woff'),
+        url('../fonts/SegoeUIRegular/SegoeUIRegular.ttf') format('truetype'),
+        url('../fonts/SegoeUIRegular/SegoeUIRegular.svg#SegoeUIRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SegoeUISemiBold';
+    src: url('../fonts/SegoeUISemiBold/SegoeUISemiBold.eot');
+    src: url('../fonts/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SegoeUISemiBold/SegoeUISemiBold.woff2') format('woff2'),
+        url('../fonts/SegoeUISemiBold/SegoeUISemiBold.woff') format('woff'),
+        url('../fonts/SegoeUISemiBold/SegoeUISemiBold.ttf') format('truetype'),
+        url('../fonts/SegoeUISemiBold/SegoeUISemiBold.svg#SegoeUISemiBold') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.SBold() {
+	font-family: 'SegoeUIBold', sans-serif;
+}
+.SLight() {
+	font-family: 'SegoeUILight', sans-serif;
+}
+.SReg() {
+    font-family: 'SegoeUIRegular', sans-serif;
+}
+.SSem() {
+    font-family: 'SegoeUISemiBold', sans-serif;
+}
+
+/*Colors*/
+@tlight: #fff;
+@tdark: #69747b;
+@tborder: #353f46;
+@tbgc: #3d474f;
+@activ: #4bcaff;
+@bgdark: #515f67;
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+/*typography*/
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+a { 
+    color: @tlight;
+    text-decoration: none;
+    text-transform: uppercase;
+    border:2px solid rgba( 0,0,0,.0);
+    &:active, &:hover {
+        color: @activ;
+        border: 2px solid @activ;
+        text-decoration: none;
+    }
+}
+.activea {
+    color: @activ;
+    border: 2px solid @activ;
+}
+
+.section-header {
+    margin-top: 8rem;
+    .SLight();
+     font-size: 30px;
+}
+.header-line {
+        &:after {
+            content: '';
+            margin-top: 0.2rem;
+            display:block;
+            width: 2.5rem;
+            height: 2px;
+            background-color: @tlight;
+        }
+        &-dark {
+            &:after {
+            content: '';
+            margin-top: 0.2rem;
+            display:block;
+            width: 2.5rem;
+            height: 2px;
+            background-color: @tdark;
+        }
+        }
+
+}
+/*Header*/
+.header {
+    min-height: 15rem;
+    width: 100%;
+    background-color: @bgdark;
+    position: fixed;
+    top:0;
+    opacity: 0.7;
+    z-index: 9;
+    &-header {
+        margin-top: 6.5rem;
+        .SBold();
+        font-size: 30px;
+        color: @tlight;
+    }
+    &-blue {
+            color: @activ;
+    }
+    &-nav {
+        display: block;
+        margin-top: 6rem;
+        text-align: right;
+        padding: 1rem;
+        .SBold();
+        font-size: 14px;
+        a {
+            padding: 1rem 1.5rem;
+        }
+    }
+    &-link {
+        margin-left: 1.5rem;
+    }
+    &-vertical {
+        &-button {
+            display: none;
+            position: absolute;
+            right:0;
+            top: 6.5rem;
+            text-align: right;
+            height: 3rem;
+            width: 3rem;
+            opacity: 0.7;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+        &-nav {
+            display: none;
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 22px;
+            &-link {
+                display: block;
+                width: 100%;
+                height: 4rem;
+                border-bottom: 1px solid @tlight;
+                margin-bottom: 1px;
+            }
+        }
+
+        .menuclose {
+            display: none;
+        }
+    }
+}
+.home {
+    height: 80rem;
+    //background: @bgdark url(../img/photo1.jpg) center no-repeat;
+    //background-size: cover;
+    &-content {
+        height: 80rem;
+        margin-top: 40rem;
+        text-align: center;
+    }
+    &-devise {
+        display: inline;
+        text-transform: uppercase;
+        font-size: 42px;
+        .SLight();
+        color: @tlight;
+        background: @tbgc;
+    }
+}
+.services {
+    min-height: 40.5rem;
+    background-color: @activ;
+    color: @tlight;
+    &-header {
+        margin-bottom: 4rem;
+    }
+    &-icons {
+        width: 5rem;
+        height: 5rem;
+    }
+    &-box {
+        h3 {
+            margin-top: 2rem;
+            .SSem();
+            font-size: 24px;
+        }
+        p {
+            margin-top: 2rem;
+            .SSem();
+            font-size: 12px;
+        }
+    }
+}
+.portfolio {
+    min-height: 84.4rem;
+    background-color: @tlight;
+    &-header {
+        margin-bottom: 6.5rem;
+        h2 {
+          color: @tdark; 
+        }
+    }
+    &-nav {
+       text-align: right;
+       margin-top: -1.5rem;
+       
+    }
+    &-link {
+             margin-left: 1rem;
+             padding: 1rem 1.5rem;
+             color: @tdark;
+             .SBold();
+             font-size: 14px;
+    }
+    &-box {
+        height: 27rem;
+        width: 27rem;
+        margin-top: 2rem;
+        &:after {
+            position: absolute;
+            content: '+';
+            top: 0;
+            left: 0;
+            margin-top: 2rem;
+            margin-left: 1.5rem;
+            width: 27rem;
+            height: 27rem;
+            font-size: 72px;
+            text-align: center;
+            color: @tlight;
+            background-color: #454e56;
+            line-height: 1;
+            opacity:0;
+            z-index:9;
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover:after {
+            opacity: 0.7;
+            line-height: 270/72;
+        }
+        img {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .admb:last-child {
+        margin-bottom: 4rem;
+    }
+}
+.justdef {
+    min-height: 47.5rem;
+    background-color: @bgdark;
+    &-box {
+        margin-top: 8rem;
+        color: @tlight;
+        p {
+            .SReg();
+            font-size: 14px;
+            margin-bottom: 3rem;
+        }
+        iframe {
+            width: 100%;
+            height: 31rem;
+            border: none;
+        }
+    }
+    &-header {
+        margin-bottom: 4rem;
+    }
+    &-link {
+        .SBold();
+        font-size: 14px;
+        color: @tborder;
+        border: 2px solid @tborder;
+        padding: 1rem 2rem;
+    }
+}
+.twitter {
+    min-height: 30rem;
+    background-color: @activ;
+    color:@tlight;
+    &-ico {
+        margin-top: 8rem;
+        text-align: right;
+        width: 1rem;
+        height: 1rem;
+    }
+    p {
+        margin-top: 2rem;
+
+        font-size: 28px;
+        .SLight();
+    }
+    &-cheese {
+        .SSem();
+    }
+}
+.whois {
+    min-height: 50.7rem;
+    background: @bgdark url(../img/bg-camera1.jpg) center no-repeat;
+    background-size: cover;
+    color: @tlight;
+    &-box {
+        margin-top: 5rem;
+        font-size: 14px;
+        .SReg();
+        p {
+            margin-bottom: 4rem;
+        }
+    }
+    &-icon {
+        display: inline-block;
+        padding: 1.5rem;
+        border: 2px solid @tlight;
+        img {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+    }
+}
+.testimonials {
+    min-height: 36rem;
+    color: @tdark;
+    &-kav {
+        margin-top: 8rem;
+        img {
+            width: 3rem;
+        }
+    }
+    &-box {
+        margin-top: 4rem;
+        .SLight();
+        font-size: 24px;
+    }
+    &-quote {
+        margin-top: 4rem;
+        color: @activ;
+        .SBold();
+        font-size: 14px;
+    }
+}
+.contacts {
+    min-height: 81rem;
+    background: @tdark url(../img/bg-holder.jpg) center no-repeat;
+    background-size: cover;
+    color: @tlight;
+    label {
+        margin-top: 3rem;
+        text-transform: uppercase;
+        .SBold();
+        font-size: 14px;
+    }
+    &-box {
+        p {
+            margin-top: 4.8rem;
+            font-size: 14px;
+        }
+    }
+    input {
+        height: 6rem;
+    }
+    input, textarea {
+        border-radius: 0;
+        border: 1px solid @tlight;
+        outline: none;
+        background: rgba( 0,0,0,.0);
+        color: @tlight;
+        .SReg();
+        font-size: 18px;
+        &:hover, &:focus {
+            color: @tlight;
+            background: rgba( 0,0,0,.0);
+            border: 1px solid @activ;
+        }
+    }
+
+    .btn {
+        margin-top: 4rem;
+        height: 5rem;
+        background-color: @activ;
+        color: @tlight;
+        border-radius: 0;
+        border:none;
+        text-transform: uppercase;
+        .SBold();
+        font-size: 14px;
+    }
+}
+.footer {
+    height: 17rem;
+    background-color: @tborder;
+    color: @tdark;
+    .SSem();
+    font-size: 12px;
+    text-transform: uppercase;
+    &-nav {
+        margin-top: 8rem;
+        ul {
+            padding: 0;
+        }
+        li {
+            display: inline-block ;
+            margin-right: 2rem;
+            padding-left: 2rem;
+            list-style-type: none;
+            border-left: 1px solid @tdark;
+        }
+        li:first-child { 
+            margin-left: 0;
+            padding-left: 0;
+            border: none;
+        }
+    }
+    &-link {
+        color: @tdark;
+    }
+    &-year {
+        margin-top: 8rem;
+        text-align: right;
+    }
+}
+.activep {
+    color: @activ;
+    border: 2px solid @activ;
+}
+@media (max-width: 1199px) {
+    .header {
+        &-link {
+            margin-left: 0.5rem;
+        }
+    }
+    .portfolio {
+        &-nav {
+           a { 
+                margin-left: 0.5rem;
+                padding: 1rem 0.5rem;
+            }
+        }
+       &-box {
+            height: 23rem;
+            width: 23rem;
+        } 
+    }
+    .home {
+        &-devise {
+            font-size: 32px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .header {
+        &-vertical {
+            display: none;
+            &-nav {
+                display: none;
+            }
+        }
+    }
+    .home {
+        &-devise {
+            font-size: 28px;
+        }
+    }
+    .footer {
+        height: 10rem;
+
+        &-nav {
+            margin-top: 4rem;
+        }
+
+        &-year {
+            margin-top: 4rem;
+        }
+    }
+    .services {
+        &-box {
+            margin-bottom: 4rem;
+        }
+    }
+    .portfolio {
+        &-nav {
+           a { 
+                margin-left: 0.5rem;
+                padding: 1rem 0.5rem;
+            }
+        }
+        &-box {
+            height: 27rem;
+            width: 27rem;
+            margin-top: 2rem;
+        }
+       .admb {
+            margin-bottom: 4rem;
+        } 
+    }
+    .justdef {
+        &-box {
+            margin-bottom: 4rem;
+        }
+    }
+    .whois {
+        &-box {
+            margin-top: 0;
+            p {
+                margin-top: 0rem;
+                margin-bottom: 4rem;
+            }
+        }
+        &-header {
+            margin-bottom: 4rem;
+        }
+        &-icons {
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+    }
+    .contacts {
+        .btn {
+            margin-bottom: 4rem;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .header {
+        min-height: 15rem;
+        &-header {
+            margin-top: 6.5rem;
+        }
+        &-nav {
+            display: none;
+            margin-top: 6.5rem;
+            text-align: center;
+            padding: 0;
+            a {
+                padding: 1rem 0.5rem;
+            }
+        }
+        &-link {
+            margin-left: 0.5rem;
+        }
+        &-vertical {
+            display: inline-block;
+            &-button {
+                display: inline-block;
+                
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+            &-nav {
+                display: none;
+                text-align: center;
+                font-size: 22px;
+                &-link {
+                    display: block;
+                    width: 100%;
+                    height: 4rem;
+                    border-bottom: 1px solid @tlight;
+                    margin-bottom: 1px;
+                }
+            }
+        }
+    }
+    .home {
+        &-devise {
+            font-size: 22px;
+        }
+    }
+    .portfolio {
+        &-box {
+            height: 40rem;
+            width: 40rem;
+        }
+    }
+    .testimonials {
+        &-quote {
+            margin-bottom: 4rem;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .header {
+            &-nav {
+                margin-top: 1rem;
+            }
+    }
+    .home {
+            &-devise {
+                font-size: 20px;
+            }
+    }
+}
