@@ -6,7 +6,7 @@
 
 [Blueasy](https://rossiev-dmitriy.github.io/blueasy/ "Blueasy") - Вёрстка из PSD макета
 
-[Reklama_v_Kazani](https://rossiev-dmitriy.github.io/Reklama_v_Kazani/ "Реклама в Казани") - Вёрстка из PSD макета
+[Реклама в Казани](https://rossiev-dmitriy.github.io/Reklama_v_Kazani/ "Реклама в Казани") - Вёрстка из PSD макета
 
 
 
