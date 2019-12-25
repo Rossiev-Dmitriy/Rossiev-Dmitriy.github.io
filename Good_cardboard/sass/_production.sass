@@ -1,0 +1,91 @@
+.production
+	padding-top: 87px
+	padding-bottom: 90px
+	&-slider
+		position: relative
+		width: 535px
+		z-index: 2
+		&_top
+			margin-bottom: 13px
+			height: 377px
+			overflow-x: hidden
+		&_bottom
+			position: relative
+			padding-left: 30px
+			padding-right: 30px
+			height: 78px
+			overflow-x: hidden
+			overflow-y: hidden
+			margin-bottom: 30px
+			img
+				margin: 0 3px
+				filter: brightness(50%)
+	&-text
+		max-width: 379px
+		&__title
+			margin-top: 19px
+			margin-bottom: 20px
+			padding-top: 20px
+			padding-bottom: 20px
+			width: 110%
+			z-index: -1
+			background-color: $btn-color
+			h3
+				color: $text-color-light
+				font-size: 28px
+				font-weight: 300
+			&__right
+				margin-left: -10%
+				padding-left: 10%
+				transform: translateX(-92px)
+			&__left
+				transform: translateX(60px)
+				text-align: right
+				padding-right: 10%
+		&__descr
+			text-align: justify
+			width: 100%
+
+			p
+				font-size: 16px
+				font-weight: 300
+				line-height: 24px
+			&__right
+				margin-left: -10%
+				padding-left: 10%
+				transform: translateX(-92px)
+			&__left
+				transform: translateX(60px)
+				padding-left: 10%
+				span
+					margin-bottom: 10px
+					text-align: left
+					font-size: 20px
+					font-weight: 300
+					display: block
+
+.slick-slide
+   width: 116px
+   outline: none
+
+.slick-slide.slick-current
+	filter: none
+.arrow
+	position: absolute
+	top: 0
+	box-sizing: border-box
+	background-color: transparent
+	border: 1px solid $btn-color
+	height: 100%
+	width: 22px
+	background-color: $text-color-light
+.prev
+	left: 0
+	background:  url(../img/6_production/prev.png) center no-repeat
+	&:hover
+		background: $btn-color url(../img/6_production/prev_hover.png) center no-repeat
+.next 
+	right: 0
+	background: url(../img/6_production/next.png) center no-repeat
+	&:hover
+		background: $btn-color url(../img/6_production/next_hover.png) center no-repeat

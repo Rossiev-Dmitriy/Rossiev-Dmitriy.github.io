@@ -1,0 +1,62 @@
+.contacts
+	position: relative
+	&-map
+		width: 100%
+		height: 550px
+		z-index: 1
+	&-block
+		position: absolute
+		top: 10%
+		left: 20%
+		z-index: 2
+		background-color: #fff
+		padding: 33px 34px 39px 60px
+		&__address
+			position: relative
+			address
+				font-size: 18px
+				font-weight: 300
+			&::before
+				position: absolute
+				left: -35px
+				content: ''
+				width: 20px
+				height: 25px
+				background: url(../img/9_contacts/ico-1_Map-Marker_orange.png) center no-repeat
+		&__phone
+			position: relative
+			margin-top: 20px
+			margin-bottom: 20px
+			&::before
+				position: absolute
+				left: -35px
+				content: ''
+				width: 20px
+				height: 25px
+				background: url(../img/9_contacts/ico-2_phone_orange.png) center no-repeat
+		&__mail
+			position: relative
+			margin-top: 20px
+			&::before
+				position: absolute
+				left: -35px
+				content: ''
+				width: 20px
+				height: 25px
+				background: url(../img/9_contacts/ico-3_mail_orange.png) center no-repeat
+		&__title
+			margin-top: 8px
+			margin-bottom: 5px
+			display: block
+			font-size: 18px
+			font-weight: 700
+			color: $text-color-dark
+		&__link
+			font-size: 18px
+			font-weight: 300
+			color: $text-color-dark
+			&:hover
+				color: darken($btn-color, 5%)
+
+
+

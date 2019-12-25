@@ -1,0 +1,378 @@
+@media (max-width: 2500px)
+	.hidden-large
+		display: none
+@media (max-width: 1200px)
+	.main
+		/*оформление главной картинки*/
+		&-img
+			width: 350px
+			height: 470px
+			&__picture
+				transform: translateY(30%)
+				width: 350px
+				height: auto
+		&-text
+			margin-left: -15px
+	.products
+		padding-bottom: 33px
+	.production
+		padding-top: 60px
+		padding-bottom: 30px
+		&-text
+			&__title
+				&__right
+					margin-left: 10%
+					padding-left: 15%
+				&__left
+					transform: translateX(10px)
+					padding-right: 45px
+			&__descr
+				&__right
+					margin-left: 10%
+					transform: translateX(-70px)
+				&__left
+					transform: translateX(0px)
+	.contacts
+		&-block
+			left: 12%
+	/*Модальные окна*/
+	.productDescription
+		&-block
+			&__outer
+				top: 20px
+				max-width: 95%
+			&__descr
+				&__img
+					min-width: 220px
+@media (max-width: 992px)
+	.header
+		&-contacts
+			&__phone
+				&s
+					flex-direction: column
+				margin-right: 10px
+
+				&:first-child
+					border: none
+					padding-right: 0px
+				a
+					font-size: 18px
+
+				span
+					font-size: 18px
+			&__button
+				display: inline-block
+				padding: 17px
+	.main
+		/*оформление главной картинки*/
+		&-img
+			width: 210px
+			&__picture
+				transform: translateY(0%)
+		&-text
+			margin-left: 85px
+			&__title
+				font-size: 36px
+			&__form
+				top: -280px
+				left: 50%
+				transform: translateX(-50%)
+	.features
+		padding-top: 39px
+		padding-bottom: 45px
+		.numbers
+			&-block
+				width: 50%
+				margin-bottom: 17px
+		&-block
+			flex-basis: 49%
+	/*Выравнивание элемента листовой гофрокартон*/
+	.cardboard-alignment
+		min-height: 60px
+	.production
+		padding-top: 22px
+		padding-bottom: 25px
+		&-slider
+			position: relative
+			width: 100%
+			&_top
+				margin-top: 14px
+				height: auto
+				width: 100%
+		&-text
+			max-width: 100%
+			&__title
+				position: relative
+				width: 105%
+				margin-left: -15px
+				&__right
+					margin-left: -15px
+					padding-left: 0
+					transform: translateX(0)
+					text-align: center
+				&__left
+					transform: translateX(0px)
+					text-align: center
+					padding-right: 0
+			&__descr
+				&__right
+					margin-left: 0
+					padding-left: 0
+					transform: translateX(0px)
+				&__left
+					transform: translateX(0px)
+					padding-left: 0
+					span
+						font-size: 16px
+						display: block
+						text-align: center
+		&-img-b
+			text-align: center
+			img
+				width: 100%
+	.feedback
+		padding-top: 50px
+		padding-bottom: 50px
+		&-slider
+			margin-left: 25px
+			&__img
+				img
+					min-width: 90%
+			&__arrow
+				height: 150px
+				top: 50%
+				transform: translateY(-50%)
+				background-color: #fff
+				&__left
+					left: -22px
+
+				&__right
+					right: 3px
+	/*Модальные окна*/
+	.productDescription
+		&-block
+			&__outer
+				top: 15px
+				min-height: 70px
+			&__inner
+				position: static
+				height: 97vh
+				overflow-y: scroll
+				-ms-overflow-style: none  /* IE 10+ */
+    				   scrollbar-width: none /* Firefox */
+				&::-webkit-scrollbar  /* chrome based */
+    				width: 0px  /* ширина scrollbar'a */
+    				background: transparent  /* опционально */
+@media (max-width: 768px)
+	.hidden-mobile
+		display: none
+	.hidden-large
+		display: block
+	.header
+		padding: 1.5rem 0
+		&-logo
+			width: 145px
+			height: 45px
+		&-contacts
+			&__phone
+				a
+					font-size: 14px
+				span
+					font-size: 14px
+					font-weight: 700
+			&__button
+				padding: 20px
+	.main
+		&-slider
+			position: relative
+		&-text
+			margin-left: 0px
+			text-align: center
+			&__title
+				margin-bottom: 0.5rem
+				font-size: 22px
+				color: $btn-color
+			&__subtitle
+				font-size: 22px
+			&__form
+				position: static
+				top: -300px
+				left: 0
+				transform: translateX(0%)
+				margin: 0
+				width: 100%
+				background-color: rgba(255,255,255,0.0)
+				padding: 0
+	.form
+		&-title
+			padding: 0
+			font-size: 18px
+		&__input
+			margin: 0
+			margin-bottom: 13px
+			width: 90%
+			&::placeholder
+				text-align: center
+	.features
+		padding-top: 29px
+		padding-bottom: 35px
+		.numbers
+			&-block
+				display: block
+				width: 100%
+				margin-bottom: 24px
+		&-blocks
+			flex-direction: column
+		&-block
+			margin-bottom: 8px
+	/*сброс выравнивания элемента листовой гофрокартон*/
+	.cardboard-alignment
+		min-height: 10px
+	.clients
+		padding: 38px 0
+	.feedback
+		&-slider
+			&__img
+				img
+					min-height: 490px
+	.contacts
+		&-map
+			height: 450px
+		&-block
+			position: static
+			text-align: center
+			&__address
+				&::before
+					display: none
+			&__phone
+				&::before
+					display: none
+			&__mail
+				&::before
+					display: none
+	/*Модальные окна*/
+	.popup
+		max-width: 95%
+		&-form
+			padding: 35px 20px 50px 20px
+			&-header
+				font-size: 28px
+			&__input
+				max-width: 95%
+	.productDescription
+		&-advantages
+			margin-bottom: 10px
+			min-height: 65px
+			padding: 5px
+			h3
+				font-size: 17px
+@media (max-width: 576px)
+	.header
+		padding: 1.5rem 0
+		&-logo
+			width: 35px
+			height: 35px
+			background: $btn-color url(../img/1_header/logo-mobile.png) center no-repeat
+			border-radius: 4px
+	.offer
+		&-form
+			&__input
+				max-width: 90%
+	.production
+		&-text
+			&__title
+				width: 110%
+				margin-left: -15px
+	.arrow
+		z-index: 999
+	.prev
+		background: $btn-color url(../img/6_production/prev_hover.png) center no-repeat
+		height: 100px
+		top: 50%
+		transform: translateY(-50%)
+	.next 
+		background: $btn-color url(../img/6_production/next_hover.png) center no-repeat
+		height: 100px
+		top: 50%
+		transform: translateY(-50%)
+	/*Модальные окна*/
+	.request
+		&-block
+			max-width: 95%
+			&__title
+				padding-top: 10px
+				line-height: 25px
+		&-form
+			&__input
+				max-width: 95%
+			&__btn
+				max-width: 95%
+	.productDescription
+		&-block
+			&__header
+				span
+					display: none
+@media (max-width: 445px)
+	.clients
+		padding: 18px 0
+		&-logo
+			margin-top: 18px
+			width: 100%
+			height: 134px
+			img
+				max-width: 75%				
+@media (max-width: 325px)
+	.features
+		padding-top: 19px
+		padding-bottom: 25px
+	.products
+		padding-top: 25px
+		padding-bottom: 15px
+		&-block
+			text-align: center
+			margin-bottom: 25px
+			img
+				margin-bottom: 9px
+				height: 281px
+			&__title
+				font-size: 20px
+				font-weight: 700
+				margin-bottom: 15px
+			&__btn
+				margin-right: 0px
+				padding-left: 5px
+				padding-right: 5px
+	.offer
+		&-title
+			h2
+				font-size: 23px
+			&_small
+				font-size: 18px
+				margin-top: 5px
+		&-form
+			&__label
+				font-size: 20px
+			&__input
+				width: 95%
+	.feedback
+		padding-top: 30px
+		padding-bottom: 30px
+		&-slider
+			margin-left: 25px
+			&__img
+				img
+					min-height: 290px
+					
+					min-width: 90%
+			&__arrow
+				&__left
+					left: -21px
+				&__right
+					right: 3px
+	/*Модальные окна*/
+	.productDescription
+		&-block
+			&__header
+				font-size: 18px
+			
+	
