@@ -149,7 +149,6 @@ button:focus {
 
 .header-contacts__button {
   background: #ff9d00 url("../img/1_header/icon-phone.png") 10px no-repeat;
-  background-size: cover;
 }
 
 .header-contacts__button .call {
