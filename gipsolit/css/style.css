@@ -1,0 +1,1640 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url("https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OVuhs.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'ProximaNova_bold';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/ProximaNova-Bold.woff2") format('woff2'), url("../fonts/ProximaNova-Bold.woff") format('woff'), url("../fonts/ProximaNova-Bold.ttf") format('truetype'), url("../fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova_reg';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/ProximaNova-Regular.woff2") format('woff2'), url("../fonts/ProximaNova-Regular.woff") format('woff'), url("../fonts/ProximaNova-Regular.ttf") format('truetype'), url("../fonts/ProximaNova-Regular.svg#ProximaNova-Regular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*Colors*/
+
+/* basic setting */
+
+html {
+  font-size: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'ProximaNova_reg', sans-serif;
+}
+
+iframe {
+  width: 100%;
+  height: 30rem;
+  border: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+
+.button {
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  background-color: #fcb303;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #e3a103;
+}
+
+/* Оформление форм */
+
+.form {
+  /*поле для ввода*/
+  /*кнопка оставить заявку*/
+}
+
+.form-input,
+.form-textarea {
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+
+.form-input {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.form label {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  padding: 0.5rem;
+  background-color: #fff;
+  font-size: 1.3rem;
+}
+
+.form-btn {
+  display: block;
+  height: 5.5rem;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+/* typography */
+
+section {
+  padding: 10rem 0;
+}
+
+.section-header {
+  margin: 2rem 0 10rem;
+  text-align: center;
+}
+
+.section-header_light {
+  color: #fff;
+  margin-top: 0;
+}
+
+.section-header h2 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+.section-header p {
+  font-size: 1.4rem;
+}
+
+/* main */
+
+.main {
+  padding: 3rem 0 5rem;
+  background: #fff url("../img/main-bg.jpg") center no-repeat;
+  background-size: cover;
+  /*подзаголовок*/
+  /*зеленый ярлык*/
+  /*Оплата по факту*/
+  /*Главная форма*/
+}
+
+.main-content {
+  margin-top: 10rem;
+  /*главный заголовок*/
+}
+
+.main-content h1 {
+  margin-top: -1rem;
+  margin-bottom: 4rem;
+  font-size: 4rem;
+  line-height: 1.45;
+  text-transform: uppercase;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+
+.main-title h2 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.main-subtitle {
+  margin-bottom: 4rem;
+  font-size: 2.4rem;
+}
+
+.main span {
+  display: inline-block;
+  padding: 3rem 5rem;
+  background-color: #46b814;
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+  /*цена 300*/
+}
+
+.main span strong {
+  font-size: 3rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+
+.main-trigger {
+  display: block;
+  margin-top: 3rem;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+
+.main-form {
+  padding: 4rem 5rem;
+  background-color: #fff;
+  text-align: center;
+  /*заголовок формы*/
+  /*Подпись под кнопкой*/
+}
+
+.main-form-header {
+  margin-bottom: 4rem;
+  font-size: 1.7rem;
+}
+
+.main-form small {
+  display: block;
+  margin-top: 1.3rem;
+  font-size: 1rem;
+}
+
+.main-descr {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.header {
+  height: 7rem;
+}
+
+.header-btn {
+  font-size: 1.4rem;
+}
+
+.wrap {
+  display: table;
+  width: 100%;
+  height: 7rem;
+}
+
+.wrap-block {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+}
+
+.phone-block {
+  text-align: right;
+}
+
+.phone-block a:hover {
+  cursor: default;
+  text-decoration: none;
+  color: #1a1820;
+}
+
+.phone-link {
+  display: inline-block;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  height: 7rem;
+  line-height: 7rem;
+  color: #1a1820;
+}
+
+/* Оформление секции с преимуществами */
+
+.features h2 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3.6rem;
+}
+
+.features-block {
+  text-align: center;
+}
+
+.features-block h3 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+
+.features-block p {
+  display: inline-block;
+  width: 80%;
+  font-size: 1.4rem;
+}
+
+.features-img {
+  height: 8rem;
+  margin-bottom: 3rem;
+}
+
+.features-img img {
+  height: 8rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.slick-active {
+  outline: none;
+}
+
+.arrow {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 9;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+
+.prev {
+  background: url("../img/features/left-arrow.svg") center no-repeat;
+  left: 0;
+  background-size: 70%;
+}
+
+.next {
+  background: url("../img/features/right-arrow.svg") center no-repeat;
+  right: 0;
+  background-size: 70%;
+}
+
+/*Секция с ценами*/
+
+.price {
+  background: #46b814 url("../img/prices/prices-bg.jpg") center;
+  /*Карточки с тарифами*/
+}
+
+.price-header-btn {
+  margin-top: 1.5rem;
+}
+
+.price-button {
+  text-align: right;
+}
+
+.price-block {
+  padding: 1rem 3rem 4rem;
+  min-height: 50rem;
+  background-color: #fff;
+  -webkit-box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+  box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+  text-align: center;
+}
+
+.price-block h4 {
+  margin: 3rem 0;
+  font-size: 1.9rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+
+.price-block img {
+  display: inline-block;
+  margin-bottom: 2rem;
+  max-width: 100%;
+}
+
+.price-tag {
+  display: block;
+  padding-bottom: 2rem;
+  font-size: 1.9rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+
+.price-list {
+  padding: 0;
+  list-style: none;
+  min-height: 14rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.price-list li:before {
+  content: '';
+  display: inline-block;
+  margin-right: 1rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url("../img/prices/check.svg") no-repeat center;
+  background-size: 100%;
+  vertical-align: middle;
+}
+
+/*Секция с отзывами*/
+
+.feedback {
+  position: relative;
+  background: url("../img/feedback/feedback-bg.png") no-repeat center;
+  background-size: cover;
+}
+
+.feedback-prew-btn {
+  left: -4rem;
+}
+
+.feedback-next-btn {
+  right: -4rem;
+}
+
+.feedback-text {
+  position: relative;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 2px solid #46b814;
+  font-style: italic;
+}
+
+.feedback-text::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 4rem;
+  top: -2rem;
+  width: 2.5rem;
+  height: 2rem;
+  border: 2px solid #46b814;
+  background-color: #fff;
+  border-bottom: none;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 75px;
+}
+
+.feedback-slider {
+  padding: 5rem 6rem;
+  background-color: #fff;
+  -webkit-box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+}
+
+.feedback-slider .media {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+}
+
+.feedback-slider .media h4 {
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+
+.feedback-slider p {
+  font-size: 1.6rem;
+}
+
+.feedback-slider-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY -50%;
+  -ms-transform: translateY -50%;
+  transform: translateY -50%;
+  width: 4rem;
+  height: 5rem;
+  background-color: #46b814;
+  border: none;
+}
+
+.feedback-slider-btn img {
+  width: 50%;
+}
+
+.feedback-form {
+  margin-top: 5rem;
+  padding: 4rem 10rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.feedback-form h3 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feedback-form label {
+  -webkit-transform: translate(-50%, 8px);
+  -ms-transform: translate(-50%, 8px);
+  transform: translate(-50%, 8px);
+}
+
+.feedback-btn {
+  max-width: 30rem;
+  margin: auto;
+}
+
+.arm {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 35rem;
+}
+
+/*Схема работы*/
+
+.scheme {
+  background: #fff url("../img/scheme/scheme-bg.png") bottom -15rem right -25rem no-repeat;
+  background-size: 95rem;
+  font-size: 1.5rem;
+}
+
+.scheme-block {
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+}
+
+.scheme h3 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin-bottom: 2rem;
+}
+
+/*Все на 100% включено*/
+
+.section-header_active h2 {
+  color: #46b814;
+}
+
+.all-inclusive {
+  background: #f5f5f5;
+}
+
+.all-inclusive .media {
+  min-height: 8rem;
+  font-size: 1.3rem;
+}
+
+.all-inclusive .media h4 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 1.6rem;
+}
+
+.all-inclusive .media p {
+  font-size: 1.1rem;
+}
+
+.all-inclusive .media-body {
+  padding: 5px;
+}
+
+.all-inclusive .media-body .Valign {
+  padding-top: 1rem;
+}
+
+.all-inclusive .circle {
+  display: inline-block;
+  background-color: #46b814;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.all-inclusive .circle-border {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid #46b814;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+  padding: 0.3rem;
+  color: #fff;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2rem;
+}
+
+/*Мы развеем все опасения*/
+
+.problems {
+  position: relative;
+}
+
+.problems-girl {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 30rem;
+  margin-left: -18rem;
+}
+
+.problems h4 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2.1rem;
+}
+
+.problems-list {
+  border: 4px solid;
+  padding: 2rem 2rem 1.5rem;
+  min-height: 44rem;
+  width: 100%;
+}
+
+.problems-list ul {
+  list-style: none;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+.problems-list ul li {
+  margin-top: 3rem;
+  position: relative;
+  padding-left: 3.5rem;
+}
+
+.problems-list ul li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+}
+
+.problems-list_bad {
+  border-color: #e8e8e8;
+}
+
+.problems-list_bad ul li {
+  margin-top: 4rem;
+}
+
+.problems-list_bad h4 {
+  opacity: 0.5;
+}
+
+.problems-list_bad ul li:before {
+  background: url("../img/problems/krest.svg") center no-repeat;
+  background-size: 50%;
+}
+
+.problems-list_good {
+  border-color: #46b814;
+}
+
+.problems-list_good ul li:before {
+  background: url("../img/problems/checked.svg") center no-repeat;
+  background-size: 70%;
+}
+
+.problems-small {
+  display: none;
+  font-size: 1.5rem;
+}
+
+.problems-small .section-header_small {
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+
+.problems-small h4 {
+  margin-bottom: 3rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2.1rem;
+  text-align: center;
+}
+
+.problems-small_head {
+  font-family: 'ProximaNova_bold', sans-serif;
+  text-align: center;
+}
+
+.problems-small_decision {
+  padding: 1rem;
+  border: 2px solid #46b814;
+  color: #46b814;
+}
+
+.problems-small_decision span {
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+
+/* Материалы */
+
+.materials {
+  font-size: 1.5rem;
+  text-align: center;
+  background: #fff url("../img/materials/materials-bg.jpg") center no-repeat;
+}
+
+.materials a {
+  color: #46b814;
+}
+
+.materials-header {
+  margin-bottom: 5rem;
+}
+
+.materials-block {
+  padding-bottom: 4rem;
+}
+
+.materials-block_in {
+  min-height: 30rem;
+}
+
+.materials-block h3 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+
+.materials-block p {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.materials-block img {
+  margin-bottom: 3rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/*посмотрите как мы работаем*/
+
+.tour {
+  background: #fff url("../img/tour/tour-bg.jpg") center no-repeat;
+  background-size: cover;
+  padding-top: 10rem;
+}
+
+.tour-subtitle {
+  font-size: 2.2rem;
+}
+
+.tour-btn {
+  padding: 1rem 1rem;
+}
+
+/*Дополнительные услуги*/
+
+.upsell {
+  background-color: #286b0a;
+  text-align: center;
+  color: #fff;
+}
+
+.upsell-section-header {
+  margin-bottom: 5rem;
+}
+
+.upsell-section-header h2 {
+  margin-bottom: 3rem;
+}
+
+.upsell-section-header p {
+  font-size: 2rem;
+}
+
+.upsell-block {
+  min-height: 30rem;
+  font-size: 2rem;
+}
+
+.upsell-block img {
+  display: inline-block;
+  margin-bottom: 2rem;
+  max-width: 33rem;
+}
+
+/*Контакты*/
+
+.contacts {
+  background: #fff url("../img/contacts/contacts-bg.jpg") center no-repeat;
+  background-size: cover;
+  font-size: 1.5rem;
+  /*Заголовок для формы*/
+}
+
+.contacts h2 {
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+
+.contacts p {
+  margin-bottom: 3rem;
+}
+
+.contacts-link {
+  display: inline-block;
+  border-bottom: 1px solid #1a1820;
+  color: #1a1820;
+}
+
+.contacts-link:hover {
+  color: #020203;
+}
+
+.contacts-form h2 {
+  font-size: 1.9rem;
+  font-family: 'ProximaNova_reg', sans-serif;
+  margin-bottom: 3rem;
+}
+
+/*Подвал сайта*/
+
+footer {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+footer .footer-contacts {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+footer .footer-contacts p {
+  margin: 0;
+}
+
+footer .footer-dev-logo {
+  text-align: right;
+  font-size: 1.1rem;
+}
+
+/* Оформление модальных окон*/
+
+.modals {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modals-dialog {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 11;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.modals-content {
+  text-align: center;
+  background-color: #fff;
+  padding: 4rem 6rem;
+  z-index: 12;
+}
+
+.modals-close {
+  position: absolute;
+  top: -1.5rem;
+  right: -2rem;
+  width: 3rem;
+  height: 3rem;
+  background: transparent url("../img/close-icon.png") 0 0 no-repeat;
+  background-size: cover;
+  border: none;
+  z-index: 999;
+}
+
+/*Получить консультацию*/
+
+.popup-form {
+  margin-top: 3rem;
+  padding: 0rem;
+}
+
+.popup-form label {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  padding: 0.5rem;
+  background-color: #fff;
+  font-size: 1.3rem;
+}
+
+.popup-header {
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+
+/*Спасибо*/
+
+.thanks h4 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.thanks p {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2.5rem;
+}
+
+/*Монтаж электропроводки*/
+
+.electro-content {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: none;
+}
+
+.electro-header {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.electro-table {
+  font-size: 1.7rem;
+}
+
+.electro td.lefttab,
+.electro th.lefttab {
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 2rem;
+  min-width: 70rem;
+}
+
+.electro td.righttab {
+  vertical-align: middle;
+  min-width: 11rem;
+  height: 5rem;
+}
+
+/*Стяжка пола*/
+
+.floor-content {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: none;
+}
+
+/* Сантехнические услуги*/
+
+.santeh-header {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.santeh-table {
+  font-size: 1.7rem;
+}
+
+.santeh td.lefttab,
+.santeh th.lefttab {
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 2rem;
+  width: 70rem;
+}
+
+.santeh td.righttab {
+  vertical-align: middle;
+  width: 12rem;
+  height: 5rem;
+}
+
+/* Калькулятор */
+
+.calculate-dialog {
+  width: 100rem;
+}
+
+.calculate-form {
+  margin-top: 3rem;
+  padding: 0rem;
+}
+
+.calculate-form label {
+  position: absolute;
+  padding: 0.5rem;
+  background-color: #fff;
+  font-size: 1.3rem;
+}
+
+.calculate-header {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+.calculate-slider_item {
+  display: block;
+  height: 22rem;
+  margin-top: 2rem;
+}
+
+.calculate-slider_item img {
+  height: 5em;
+  display: block;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.calculate-slider_item input {
+  display: block;
+  margin: auto;
+  margin-bottom: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.calculate-slider_item label {
+  display: block;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.calculate-slider .slide1,
+.calculate-slider .slide2,
+.calculate-slider .slide3,
+.calculate-slider .slide4,
+.calculate-slider .result {
+  display: none;
+}
+
+.calculate-nav {
+  margin-top: 2rem;
+}
+
+.calculate-next {
+  height: 4rem;
+  width: 20rem;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  color: #606060;
+  border: solid 1px #b7b7b7;
+  background: #fff;
+  background: -ms-linear-gradient(top, #fff, #ededed);
+  background-image: -o-linear-gradient(top, #fff, #ededed);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+}
+
+.calculate-next-end {
+  margin-top: 2rem;
+  height: 4rem;
+  width: 20rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.calculate-next:hover {
+  background-color: #fcb303;
+  background: -ms-linear-gradient(top, #fcb303, #fcb333);
+  background-image: -o-linear-gradient(top, #fcb303, #fcb333);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcb303', endColorstr='#fcb333');
+  color: #fff;
+}
+
+.calculate-result {
+  display: none;
+  font-size: 2rem;
+}
+
+.calculate-result h5 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2rem;
+}
+
+.calculate-result strong {
+  font-size: 3rem;
+}
+
+.calculate-result #wallpapertoshow,
+.calculate-result #zavozmat,
+.calculate-result #garant {
+  display: none;
+}
+
+.at-day {
+  margin-top: 1rem;
+}
+
+/*Медиа запросы адаптации сайта*/
+
+@media (max-width: 1431px) {
+  .scheme {
+    background-position: bottom -14rem right -25rem;
+    background-size: 85rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .price-list {
+    min-height: 16rem;
+  }
+
+  .price-block {
+    min-height: 58rem;
+  }
+
+  .price-block-header {
+    min-height: 7rem;
+  }
+
+  .feedback-form {
+    padding: 3rem 5rem;
+  }
+
+  .feedback .fotorama {
+    margin-bottom: 3rem;
+  }
+
+  .scheme {
+    background-position: bottom -14rem right -30rem;
+    background-size: 75rem;
+  }
+
+  .all-inclusive .media {
+    min-height: 11rem;
+  }
+
+  .problems-list {
+    min-height: 42rem;
+  }
+
+  .problems-list ul {
+    padding: 0 0rem;
+    margin-top: 0;
+  }
+
+  .problems-list ul li {
+    margin-top: 1rem;
+  }
+
+  .problems-list_bad ul {
+    margin-top: 2rem;
+  }
+
+  .problems-list_bad ul li {
+    margin-top: 4rem;
+  }
+
+  .problems-list_good ul {
+    margin-top: 2rem;
+  }
+
+  .tour {
+    background-position: center left -75rem;
+  }
+
+  .arm {
+    max-width: 30rem;
+  }
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 5rem 0;
+  }
+
+  .main {
+    background-position: top right;
+  }
+
+  .phone-block {
+    text-align: center;
+  }
+
+  .main-content {
+    margin-top: 3rem;
+  }
+
+  .main-title {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+
+  .price-button {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .price-header-btn {
+    text-align: center;
+  }
+
+  .price-block {
+    margin-top: 2rem;
+    padding: 1rem 3rem 3rem;
+    min-height: 40rem;
+  }
+
+  .price-block h4 {
+    margin: 3rem 0;
+  }
+
+  .price-list {
+    min-height: 7rem;
+    margin-bottom: 2rem;
+  }
+
+  .feedback-header {
+    margin-bottom: 5rem;
+  }
+
+  .section-header_light {
+    margin-bottom: 0;
+  }
+
+  .arm {
+    display: none;
+  }
+
+  .scheme {
+    background-position: bottom -14rem right -30rem;
+    background-size: 85rem;
+  }
+
+  .all-inclusive {
+    padding-bottom: 2rem;
+  }
+
+  .all-inclusive .section-header_active {
+    margin-bottom: 5rem;
+  }
+
+  .problems {
+    display: none;
+  }
+
+  .problems-girl {
+    display: none;
+  }
+
+  .problems-list {
+    margin-bottom: 3rem;
+    min-height: auto;
+  }
+
+  .problems-small {
+    display: block;
+  }
+
+  .tour {
+    background-position: center left -85rem;
+  }
+
+  .upsell {
+    padding: 5rem 0 1rem;
+  }
+
+  .upsell-section-header {
+    margin-bottom: 5rem;
+  }
+
+  .upsell-block {
+    margin-bottom: 3rem;
+  }
+
+  .contacts {
+    background: none;
+    background: #f5f5f5;
+    text-align: center;
+  }
+
+  .contacts-form {
+    margin-top: 3rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer .footer-contacts {
+    margin: 3rem 0;
+  }
+
+  footer .footer-dev-logo {
+    text-align: center;
+  }
+
+  /* Адаптив модальных окон*/
+
+  /*Спасибо*/
+
+  .thanks-dialog {
+    width: 55%;
+  }
+
+  .thanks-content {
+    padding: 4rem 3rem;
+  }
+
+  /*Монтаж электропроводки*/
+
+  .electro-dialog {
+    width: 90%;
+  }
+
+  .electro-content {
+    padding: 4rem 3rem;
+    height: 100vh;
+  }
+
+  .electro td.lefttab,
+  .electro th.lefttab {
+    min-width: 70%;
+  }
+
+  .electro td.righttab {
+    min-width: 11rem;
+  }
+
+  /* Сантехнические услуги*/
+
+  .santeh-dialog {
+    width: 80%;
+  }
+
+  /* Калькулятор */
+
+  .calculate-dialog {
+    width: 80%;
+  }
+
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    background-position: top left;
+  }
+
+  .main-content {
+    margin-top: 15rem;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .wrap-block {
+    text-align: center;
+  }
+
+  .feedback-prew-btn {
+    left: 0;
+  }
+
+  .feedback-next-btn {
+    right: 0;
+  }
+
+  .scheme {
+    background: #fff;
+    text-align: center;
+  }
+
+  .scheme-header {
+    margin-bottom: 2rem;
+  }
+
+  .all-inclusive {
+    padding-left: 0;
+  }
+
+  .tour {
+    padding-top: 1rem;
+    background-position: center left -1rem;
+  }
+
+  .tour-content {
+    margin-top: 5rem;
+  }
+
+  /* Адаптив модальных окон*/
+
+  /*Спасибо*/
+
+  .thanks-dialog {
+    width: 70%;
+  }
+
+  .thanks-content {
+    padding: 4rem 1rem;
+  }
+
+  /*Получить консультацию*/
+
+  .popup-dialog {
+    width: 70%;
+  }
+
+  /*Монтаж электропроводки*/
+
+  .electro-dialog {
+    top: 3%;
+    width: 93%;
+  }
+
+  /*Стяжка пола*/
+
+  .floor-dialog {
+    top: 3%;
+    width: 93%;
+  }
+
+  .floor-content {
+    padding: 4rem 1rem;
+  }
+
+  /* Сантехнические услуги*/
+
+  .santeh-dialog {
+    width: 90%;
+  }
+
+  .santeh-content {
+    padding: 4rem 1rem;
+  }
+
+  /* Калькулятор */
+
+  .calculate-dialog {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .all-inclusive .media {
+    min-height: 8rem;
+  }
+
+  /* Адаптив модальных окон*/
+
+  /*Спасибо*/
+
+  .thanks-dialog {
+    width: 80%;
+  }
+
+  /*Получить консультацию*/
+
+  .popup-dialog {
+    width: 80%;
+  }
+
+  /*Стяжка пола*/
+
+  .floor-dialog {
+    width: 93%;
+  }
+
+  .floor-content {
+    padding: 4rem 1rem;
+    height: auto;
+  }
+
+  .floor-table {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 524px) {
+  .main-content {
+    /*главный заголовок*/
+  }
+
+  .main-content h1 {
+    font-size: 3rem;
+  }
+
+  .feedback {
+    padding: 2rem 0;
+  }
+
+  .feedback-header {
+    margin-bottom: 2rem;
+  }
+
+  .feedback-slider {
+    padding: 1rem 1rem;
+  }
+
+  .upsell {
+    padding: 3rem 0 1rem;
+  }
+
+  .upsell-section-header {
+    margin-bottom: 3rem;
+  }
+
+  .upsell-block {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Адаптив модальных окон*/
+
+  /*Спасибо*/
+
+  .thanks-dialog {
+    width: 80%;
+  }
+
+  .thanks-content {
+    padding: 4rem 1rem;
+  }
+
+  .thanks h4 {
+    font-size: 2.5rem;
+  }
+
+  .thanks p {
+    font-size: 2rem;
+  }
+
+  /*Получить консультацию*/
+
+  .popup-dialog {
+    width: 80%;
+  }
+
+  .popup-content {
+    padding: 4rem 3rem;
+  }
+
+  /*Монтаж электропроводки*/
+
+  .electro-content {
+    padding: 2rem 1rem;
+  }
+
+  /*Стяжка пола*/
+
+  .floor-table {
+    font-size: 10px;
+  }
+
+  /* Калькулятор */
+
+  .calculate-content {
+    padding: 4rem 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .main {
+    /*Главная форма*/
+  }
+
+  .main-content {
+    /*главный заголовок*/
+  }
+
+  .main-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .main-form {
+    padding: 4rem 1.5rem;
+    /*заголовок формы*/
+    /*Подпись под кнопкой*/
+  }
+
+  .main-form small {
+    font-size: 1.2rem;
+  }
+
+  .feedback-form {
+    padding: 4rem 1rem;
+  }
+
+  .feedback-btn {
+    max-width: 30rem;
+    margin: auto;
+  }
+
+  .features-header {
+    margin-bottom: 4rem;
+  }
+
+  .features h2 {
+    font-size: 3rem;
+  }
+
+  .upsell-section-header h2 {
+    font-size: 3rem;
+  }
+
+  .upsell-block img {
+    max-width: 100%;
+  }
+
+  /* Адаптив модальных окон*/
+
+  /*Спасибо*/
+
+  .thanks-dialog {
+    width: 89%;
+  }
+
+  .thanks h4 {
+    font-size: 2rem;
+  }
+
+  .thanks p {
+    font-size: 1.6rem;
+  }
+
+  /*Получить консультацию*/
+
+  .popup-dialog {
+    width: 89%;
+  }
+
+  .popup-content {
+    padding: 4rem 1.5rem;
+  }
+
+  .popup-form {
+    padding: 0rem 1.5rem;
+  }
+
+  /*Монтаж электропроводки*/
+
+  .electro td.lefttab,
+  .electro th.lefttab {
+    min-width: 70%;
+  }
+
+  .electro td.righttab {
+    min-width: 7rem;
+  }
+}
