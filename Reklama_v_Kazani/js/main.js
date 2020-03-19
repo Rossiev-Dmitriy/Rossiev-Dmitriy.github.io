@@ -52,18 +52,15 @@ $(document).ready(function(){
 			function animateCSS(element, animationName, callback) {
 			    const node = document.querySelector(element)
 			    node.classList.add('animated', animationName)
-
 			    function handleAnimationEnd() {
 			        node.classList.remove('animated', animationName)
 			        node.removeEventListener('animationend', handleAnimationEnd)
-
 			        if (typeof callback === 'function') callback()
 			    }
 
 			    node.addEventListener('animationend', handleAnimationEnd)
 			}
 		/* Модальные окна */
-
 			/* Видео о нас */
 			$('.ourvideo-btn').on('click', function(event){
 				event.preventDefault();
@@ -99,7 +96,6 @@ $(document).ready(function(){
 				setTimeout(function () {
 				$('.thanks-text').html("Наш специалист свяжется <br> с Вами в ближайшее время");
 				}, 1000); 
-				
 			});
 			/*заказать выезд замерщика*/
 			$('.freeserv-btn').on('click', function(event){
@@ -143,65 +139,7 @@ $(document).ready(function(){
 					event.preventDefault();
 					$('.thanks').fadeOut();
 				});
-			
-
 		});
-		/* Скрытые секции*/
-		/* Наши услуги*/
-		// $(document).ready(function(){
-		// 	$(".all-services").hide();
-		// 	$(".services-box").click(function(){
-		// 		$(".all-services").slideToggle(1500);
-		// 		/*setTimeout(function () {
-		// 			var scrollTop = $('#allserv').offset().top;
-		// 		$(document).scrollTop(scrollTop);
-		// 		}, 1000);*/
-		// 		var offset = 0;
-		// 		$('html, body').animate({
-		// 			scrollTop: $('#allserv').offset().top - offset 
-		// 		    }, 1000);
-		// 		         return false; 
-		// 	});
-		// 	$('.all-services').mouseleave(function(){
-		// 		setTimeout(function () {
-		// 	  $('.all-services').stop().slideUp(1500);
-		// 	}, 1000);
-		// 	});
-		// });
-		/* О компании*/
-		//$(document).ready(function(){
-			//$(".about-us").hide();
-			// $(".company-btn").click(function(){
-			// 	$(".about-us").slideToggle(2500);
-			// 	var offset = 0;
-			// 	$('html, body').animate({
-			// 		scrollTop: $('#aboutus').offset().top - offset 
-			// 	    }, 1000);
-			// 	         return false; 
-			// });
-			/*$('.about-us').mouseleave(function(){
-				setTimeout(function () {
-			  $('.about-us').stop().slideUp(1500);
-			 }, 1000);
-			});*/
-		//});
-		/* Портфолио */
-		// $(document).ready(function(){
-		// 	$(".portfolio").hide();
-		// 	$(".portfolio-btn").click(function(){
-		// 		$(".portfolio").slideToggle(3500);
-		// 		var offset = 0;
-		// 		$('html, body').animate({
-		// 			scrollTop: $('#ourportfol').offset().top - offset 
-		// 		    }, 1000);
-		// 		         return false; 
-		// 	});
-		// 	$('.portfolio').mouseleave(function(){
-		// 		setTimeout(function () {
-		// 	  $('.portfolio').stop().slideUp(1500);
-		// 	  }, 1000);
-		// 	});
-		// });
 		/*Плавный скролл страницы*/
 		$('a[href*="#"]').on('click', function (e) {
 		  e.preventDefault();
@@ -242,30 +180,8 @@ $(document).ready(function(){
 			infinite: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			//prevArrow:'<button class="about-us-slider-btn about-us-prew-btn"><img src="img/10aboutus/violet-blue-arrow-left.svg"></button>',
-			//nextArrow:'<button class="about-us-slider-btn about-us-next-btn"><img src="img/10aboutus/violet-blue-arrow-right.svg"></button>'
 			});
 		});
-
-		// $('.portfolio-slider').slick({
-		// 	infinite: true,
-		// 	slidesToShow: 1,
-		// 	slidesToScroll: 1,
-		// 	arrows: true,
-				// responsive: [
-			 //        {
-				// 		breakpoint: 576,
-				// 		settings: {
-				// 			slidesToShow: 1,
-				// 			slidesToScroll: 1,
-				// 			arrows: true,
-				// 			prevArrow:'<button class="prev arrow portfolio-slider_top__arrow"></button>',
-				// 			nextArrow:'<button class="next arrow portfolio-slider_top__arrow"></button>',
-			 //        	}	
-			 //        },
-			 //    ]
-		// });
-
 		function portfolioSliderBottom(){
 		    $('.portfolio-slider_bottom').slick({
 		    	slidesToShow: 8,
@@ -276,22 +192,8 @@ $(document).ready(function(){
 		    	focusOnSelect: true,
 		    	prevArrow:'<button class="prew arrow"></button>',
 				nextArrow:'<button class="next arrow"></button>'
-		    	// responsive: [
-		     //        {
-		     //           breakpoint: 1200,
-		     //           settings: {
-		     //              slidesToShow: 1,
-		     //              slidesToScroll: 1
-		     //        	}	
-		     //        },
-		     //        {
-		     //            breakpoint: 576,
-		     //            settings: "unslick"
-		     //        },
-		     //    ]
 		    });
 		}
-
 		portfolioSliderBottom();
 		$(window).resize(function(){
 		    var $windowWidth = $(window).width();
